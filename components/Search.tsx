@@ -5,10 +5,10 @@ import { IoSearchOutline } from "react-icons/io5";
 
 const Search = () => {
   return (
-    <div className="relative flex items-center justify-between">
+    <div className="relative flex h-10 items-center justify-between">
       <Link
         href={"/"}
-        className="absolute bg-gray-200 p-1 rounded-full hover:bg-slate-300"
+        className="absolute rounded-full bg-zinc-100 p-1 hover:bg-slate-200"
       >
         <IoSearchOutline className="" size={20} />
       </Link>
@@ -16,7 +16,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Buscar"
-        className="rounded-full border-none bg-gray-200 pl-9 hover:bg-slate-300"
+        className="w-32 rounded-full border-none bg-zinc-100 pl-9 hover:bg-slate-200"
       />
     </div>
   );
