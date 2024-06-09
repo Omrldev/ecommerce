@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,7 +9,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-     
+      keyframes: {
+        'left': { 
+          '0%, 100%': { transform: 'translateX(-100%)'},
+          '50%': { transform: 'translateX(0)'}
+        },
+        'right': {
+          '0%, 10%': { transform: 'translateX(100%)'},
+          '90%': { transform: 'translateX(0)'}
+        }
+      },
+      animation: {
+        'trans-left': 'left 1.5s infinite',
+        'trans-right': 'right 1.5s ease-in-out infinite'
+      }
     },
   },
   plugins: [],

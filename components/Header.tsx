@@ -115,13 +115,15 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="grid h-14 items-center justify-center bg-zinc-100 text-center align-baseline font-semibold text-black/90">
-        <p className="text-sm">Comprar novedades</p>
-        <span className="-mt-6 text-xs">
-          <Link href={"/"} className="underline">
-            comprar
-          </Link>
-        </span>
+      <div className="flex h-14 flex-col items-center justify-center bg-zinc-100 text-center align-baseline font-semibold text-black/90">
+        <div className="container animate-trans-left">
+          <p className="text-sm">Comprar novedades</p>
+          <span className="text-xs">
+            <Link href={"/"} className="underline">
+              comprar
+            </Link>
+          </span>
+        </div>
       </div>
     </header>
   );

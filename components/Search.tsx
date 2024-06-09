@@ -16,7 +16,7 @@ const Search = () => {
       <input
         type="text"
         placeholder="Buscar"
-        className="w-32 rounded-full border-none bg-zinc-100 pl-9 hover:bg-slate-200"
+        className="w-32 rounded-full bg-zinc-100 pl-7 hover:bg-slate-200 border-none outline-none"
       />
     </div>
   );
